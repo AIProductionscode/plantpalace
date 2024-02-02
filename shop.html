@@ -1,0 +1,953 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop All Plants | Plant Palace </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="images/favicon.png" type="images/x-icon">
+
+    <style>
+        @font-face {
+            font-family: Montserrat;
+            src: url(Fonts/static/Montserrat-Regular.ttf)format(ttf);
+
+            font-family: Montserrat Light;
+            src: url(Fonts/static/Montserrat-Light.ttf)format(ttf);
+
+            font-family: Kelvinch;
+            src: url(Fonts/kelvinch/Kelvinch-Bold.otf)format(otf);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shop-body animate__animated animate__fadeIn">
+        <nav class="navbar navbar-expand-sm  animate__animated animate__fadeInDown" aria-label="Third navbar example">
+            <div class="container-fluid">
+                <!--Icon-->
+                <a class="navbar-brand pl-2 animate__animated animate__rotateInDownLeft animate__delay-1s "
+                    href="home.html">
+                    <img src="images/Logo Black.png" class="img-fluid" style="height: 40px;" alt="Plant Palace">
+                </a>
+                <!--Wordmark-->
+                <a class="navbar-brand animate__animated animate__fadeInRight animate__delay-1s " href="home.html">
+                    <img src="images/wordmarkl.png" class="img-fluid" style="height: 20px;" alt="Plant Palace">
+                </a>
+
+                <!--Hamburger-->
+                <button class="navbar-toggler" type="button" style="border: none;" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end sec-font" id="navbarsExample03">
+                    <ul class="navbar-nav mb-2 mb-sm-0">
+                        <li class="nav-item px-3">
+                            <a class="nav-link" aria-current="page" href="home.html">
+                                <!-- <img src="images/home.png" class="icon" alt="Home">--> HOME</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="shop.html"><img src="images/shop.png" class="icon" alt="Shop">
+                                SHOP</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="blog.html"><!--<img src="images/plants.png" class="icon" alt="Plant Blog">-->PLANT BLOGS</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="aboutus.html"><!--<img src="images/about us.png" class="icon" alt="About Us">--> ABOUT
+                                US</a>
+                        </li>
+
+                       
+                        <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+                        <form class="d-flex" role="search">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <a class="btn-search" type="submit">Search</a>
+                        </form>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--* Heading Text -->
+        <div class="container text-center py-5 my-5">
+            <h1 class="pry-font h1 display-2 text-white animate__animated animate__fadeInUp">
+                Wholesome<br>Greenery<br>Collection.</h1>
+            <p class="sec-font p pry-col animate__animated animate__fadeInUp text-white">Curated green treasures for a
+                naturally vibrant and <br> revitalized space.</p>
+        </div>
+    </div><!--Body-->
+
+    <!--Preshop Section-->
+    <div class="container px-5 py-5 text-center">
+        <img src="images/plantpot2.png" class="img-fluid py-2" alt="Plant Pot" style="height: 150px;">
+
+        <div class="row">
+            <div class="col-8 d-flex justify-content-start">
+                <h1 class="pry-font display-5 pry-col">Shop All Plants</h1>
+            </div>
+            <div class="col-4  justify-content-end">
+                <a class="sec-font pry-col dropdown-toggle px-4 py-2" data-bs-toggle="dropdown" aria-expanded="false"
+                    href="#" style="border: 2px solid #00904f; text-decoration: none;">Sort by: Featured</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Newest</a></li>
+                    <li><a class="dropdown-item" href="#">Price: High to low</a></li>
+                    <li><a class="dropdown-item" href="#">Price: Low to high</a></li>
+                </ul>
+            </div>
+
+            <div class="row py-3">
+                <div class="col d-flex justify-content-start">
+                    <a style="text-decoration: none;" class="sec-font pry-col px-5" data-bs-toggle="offcanvas"
+                        href="#cart" role="button" aria-controls="cart">
+                        <img src="images/shopping cart.png" class="icon px-2" alt="cart">Cart
+                    </a>
+                    <a class="sec-font pry-col dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#"
+                        style="text-decoration: none;"><img src="images/filter.png" style="height: 15px;" alt="filter">
+                        Filter</a>
+                        
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" onclick="filterSelection('all')">all</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="filterSelection('bigPlant')">Big Plant size</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="filterSelection('smallPlant')">Small Plant size</a></li>
+                        <li><a class="dropdown-item" href="#"  onclick="filterSelection('green')">Green</a></li>
+                        <li><a class="dropdown-item" href="#"  onclick="filterSelection('color')">Color</a></li>
+                        <li><a class="dropdown-item" href="#"  onclick="filterSelection('high')">High Price</a></li>
+                        <li><a class="dropdown-item" href="#"  onclick="filterSelection('low')">Low Price</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Cart Sidebar-->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="cart"
+            aria-labelledby="cart">
+            <!--Offcanvas Header-->
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title pry-col pry-font" id="cart"><img src="images/shopping cart.png"
+                        style="height: 40px;" alt="cart"> Cart</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <!--Cart Body-->
+            <div class="offcanvas-body">
+                <div class="cart-content">
+
+
+                </div>
+                <!--Total-->
+                <div class="row total">
+                    <h5 class="total-title pry-font pry-col col justify-content-start">Total</h5>
+                    <h2 class="total-price pry-font sec-col col justify-content-end ">$0</h2>
+                </div>
+
+                <!--Buy Button-->
+                <a class="btn-pry">Buy Now</a>
+
+            </div><!--Offcanvas Body-->
+        </div><!--Offcanvas-->
+
+
+        <!--*Shop Items-->
+        <!--!Row -->
+        <div class="row mb-3 text-center">
+
+            <div class="col-sm-4 product green low smallPlant"><img src="images/g1.jpg" class="img-fluid   product-image">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+                </div>
+                <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+
+            <div class="col-sm-4 product green low bigPlant"><img src="images/g2.jpg" class="img-fluid product-image">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+                    </h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+                </div>
+                <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+
+            <div class="col-sm-4 product green high bigplant"><img src="images/g3.jpg" class="img-fluid  product-image">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                        Ceramic Vase</h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+                </div>
+                <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+        </div>
+
+         <!--Row -->
+         <div class="row mb-3 text-center">
+
+            <div class="col-sm-4 product green high smallPlant"><img src="images/g4.jpg" class="img-fluid product-image ">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+                </div>
+                <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+
+            <div class="col-sm-4 product green low smallPlant"><img src="images/g5.jpg" class="img-fluid product-image">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+                    </h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+                </div>
+                <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+
+            <div class="col-sm-4 product green low smallPlant"><img src="images/g6.jpg" class="img-fluid product-image ">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                        Ceramic Vase</h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+                </div>
+                <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+        </div>
+
+         <!--Row -->
+         <div class="row mb-3 text-center">
+
+            <div class="col-sm-4 product green smallPlant high"><img src="images/g7.jpg" class="img-fluid product-image">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+                </div>
+                <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+
+            <div class="col-sm-4 product green bigPlant high"><img src="images/g8.jpg" class="img-fluid product-image">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+                    </h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+                </div>
+                <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+
+            <div class="col-sm-4 product green smallPlant high"><img src="images/g9.jpg" class="img-fluid product-image">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                        Ceramic Vase</h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+                </div>
+                <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+        </div>
+
+         <!--Row -->
+         <div class="row mb-3 text-center">
+
+            <div class="col-sm-4 product green smallPlant low"><img src="images/g10.jpg" class="img-fluid product-image">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+                </div>
+                <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+
+            <div class="col-sm-4 product green smallPlant high"><img src="images/g11.jpg" class="img-fluid product-image">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+                    </h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+                </div>
+                <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+
+            <div class="col-sm-4 product gren bigPlant high"><img src="images/g12.jpg" class="img-fluid product-image">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                        Ceramic Vase</h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+                </div>
+                <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+        </div>
+
+         <!--Row -->
+         <div class="row mb-3 text-center">
+
+            <div class="col-sm-4 product green smallPlant low"><img src="images/g13.jpg" class="img-fluid product-image">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+                </div>
+                <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+
+            <div class="col-sm-4 product green bigPlant high"><img src="images/g14.jpg" class="img-fluid product-image">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+                    </h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+                </div>
+                <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+
+            <div class="col-sm-4 product green bigPlant high"><img src="images/g15.jpg" class="img-fluid product-image">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                        Ceramic Vase</h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+                </div>
+                <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+        </div>
+
+         <!--Row -->
+         <div class="row mb-3 text-center">
+
+            <div class="col-sm-4 product smallPlant high green"><img src="images/g16.jpg" class="img-fluid product-image">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+                </div>
+                <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+
+            <div class="col-sm-4 product green smallPlant low"><img src="images/g17.jpg" class="img-fluid product-image">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+                    </h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+                </div>
+                <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+
+            <div class="col-sm-4 product green smallPlant high"><img src="images/g18.jpg" class="img-fluid product-image">
+                <div class="me-auto py-3 row">
+                    <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                        Ceramic Vase</h5>
+                    <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+                </div>
+                <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+                    aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+            </div>
+        </div>
+
+ <!--Row -->
+ <div class="row mb-3 text-center">
+
+    <div class="col-sm-4 product smallPlant high green"><img src="images/g19.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product bigPlant high green"><img src="images/g20.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+            </h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product bigPlant low green"><img src="images/g21.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                Ceramic Vase</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+        </div>
+        <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+</div>
+
+ <!--Row -->
+ <div class="row mb-3 text-center">
+
+    <div class="col-sm-4 product smallPlant high green"><img src="images/g22.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product green low smallPlant"><img src="images/g23.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+            </h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product green bigPlant high"><img src="images/g24.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                Ceramic Vase</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+        </div>
+        <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+</div>
+
+ <!--Row -->
+ <div class="row mb-3 text-center">
+
+    <div class="col-sm-4 product smallPlant green low"><img src="images/g25.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product high smallPlant green"><img src="images/g26.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+            </h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product green smallPlant low"><img src="images/g27.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                Ceramic Vase</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+        </div>
+        <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+</div>
+
+ <!--Row -->
+ <div class="row mb-3 text-center">
+
+    <div class="col-sm-4 product smallPlant high green "><img src="images/g28.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product green low bigGreen"><img src="images/g29.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+            </h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product green high bigPlant"><img src="images/g30.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                Ceramic Vase</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+        </div>
+        <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+</div>
+
+<!--Flower-->
+ <!--Row -->
+ <div class="row mb-3 text-center">
+
+    <div class="col-sm-4 product color smallPlant high"><img src="images/f1.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product color smallPlant low"><img src="images/f2.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+            </h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product color smallPlant high"><img src="images/f3.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                Ceramic Vase</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+        </div>
+        <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+</div>
+
+ <!--Row -->
+ <div class="row mb-3 text-center">
+
+    <div class="col-sm-4 product color smallPlant low"><img src="images/f4.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product color smallPlant high"><img src="images/f5.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+            </h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product color smallPlant low"><img src="images/f6.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                Ceramic Vase</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+        </div>
+        <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+</div>
+
+ <!--Row -->
+ <div class="row mb-3 text-center">
+
+    <div class="col-sm-4 product color smallPlant low"><img src="images/f7.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product color smallPlant high"><img src="images/f8.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+            </h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product color smallPlant low"><img src="images/f9.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                Ceramic Vase</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+        </div>
+        <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+</div>
+
+ <!--Row -->
+ <div class="row mb-3 text-center">
+
+    <div class="col-sm-4 product green smallPlant low"><img src="images/g31.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product green smallPlant low"><img src="images/g32.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+            </h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product green smallPlant low"><img src="images/g33.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                Ceramic Vase</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+        </div>
+        <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+</div>
+
+<!--Row -->
+<div class="row mb-3 text-center">
+
+    <div class="col-sm-4 product green smallPlant high"><img src="images/g34.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product green smallPlant low"><img src="images/g35.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+            </h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product green smallPlant high"><img src="images/g36.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                Ceramic Vase</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+        </div>
+        <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+</div>
+
+<!--Row -->
+<div class="row mb-3 text-center">
+
+    <div class="col-sm-4 product green smallPlant high"><img src="images/g37.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product green smallPlant high"><img src="images/g38.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+            </h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product green smallPlant high"><img src="images/g39.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                Ceramic Vase</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+        </div>
+        <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+</div>
+
+<!--Row -->
+<div class="row mb-3 text-center">
+
+    <div class="col-sm-4 product green high smallPlant"><img src="images/g40.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product green high bigPlant"><img src="images/g41.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+            </h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product green smallPlant low"><img src="images/g42.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                Ceramic Vase</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+        </div>
+        <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+</div>
+
+<!--Row -->
+<div class="row mb-3 text-center">
+
+    <div class="col-sm-4 product green smallPlant high"><img src="images/g43.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product green smallPlant high"><img src="images/g44.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+            </h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product green smallPlant high"><img src="images/g45.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                Ceramic Vase</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+        </div>
+        <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+</div>
+
+<!--Row -->
+<div class="row mb-3 text-center">
+
+    <div class="col-sm-4 product high green smallPlant"><img src="images/g46.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product green high smallPlant"><img src="images/g47.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Birds Nest Fern Plant
+            </h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$66</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+
+    <div class="col-sm-4 product smallPlant high green"><img src="images/g48.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Green Houseplant White
+                Ceramic Vase</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$55</h3>
+        </div>
+        <a class="btn-pry add-cart col-8" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+</div>
+
+<!--Row -->
+<div class="row mb-3 text-center">
+
+    <div class="col-sm-4 product green smallPlant high"><img src="images/g50.jpg" class="img-fluid product-image">
+        <div class="me-auto py-3 row">
+            <h5 class="pry-font product-title grey-col col-9" style="text-align: left;">Potted Peperomia</h5>
+            <h3 class="pry-font sec-col col-3 justify-content-end price">$45</h3>
+        </div>
+        <a class="btn-pry my-2 col-8 add-cart" data-bs-toggle="offcanvas" href="#cart" role="button"
+            aria-controls="cart">Add to cart <img src="images/cart.png" alt="cart" class="icon"></a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    </div><!--Shop div-->
+
+
+
+    <!--Footer-->
+    <div class="container-fluid footer">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5 class="pry-font product-title text-white">Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link sec-font p-0 text-body-secondary">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link sec-font p-0 text-body-secondary">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link sec-font p-0 text-body-secondary">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link sec-font p-0 text-body-secondary">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link sec-font p-0 text-body-secondary">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5 class="pry-font product-title text-white">Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link sec-font p-0 text-body-secondary">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link sec-font p-0 text-body-secondary">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link sec-font p-0 text-body-secondary">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link sec-font p-0 text-body-secondary">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link sec-font p-0 text-body-secondary">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5 class="pry-font product-title text-white">Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link sec-font p-0 text-body-secondary">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link sec-font p-0 text-body-secondary">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link sec-font p-0 text-body-secondary">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link sec-font p-0 text-body-secondary">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#"
+                                    class="nav-link sec-font p-0 text-body-secondary">About</a></li>
+                        </ul>
+                    </div>
+
+                    <!--Feedback-->
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h3 class="pry-font text-white">Feedback</h3>
+                            <p class="sec-font acc-col">We'll like to hear from you.</p>
+
+                            <label for="feedback" class="visually-hidden sec-font">Explain your
+                                feedback...</label>
+                            <input id="feedback" type="text" class="form-control my-2 sec-font"
+                                placeholder="Explain your feedback...">
+
+                            <label for="description" class="visually-hidden sec-font">Description</label>
+                            <input id="description" type="text" class="form-control sec-font my-2"
+                                placeholder="What did you expect...">
+
+                            <label for="email" class="visually-hidden sec-font">Email address</label>
+                            <input id="email" type="text" class="form-control my-2 sec-font"
+                                placeholder="Email address">
+
+                            <a class="btn-reverse" id="toastbtn" type="button">Send Feedback</a>
+                            <!-- <div class="d-flex flex-column flex-sm-row w-100 gap-2"></div> -->
+                        </form>
+                    </div>
+                </div>
+
+                <!--Feedback Toast-->
+                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <img src="images/Logo white.png" style="height: 40px;" alt="Plant Palace">
+                            &nbsp;&nbsp;&nbsp;
+                            <h5 class="pry-font product-title pry-col me-auto">Feedback Sent <img src="images/check.png"
+                                    class="icon">
+                            </h5>
+
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            <p class="sec-font grey-col">We Appreciate Your Feedback and would get back to you
+                                soon</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Toast Function-->
+
+                <div class="d-flex flex-column flex-sm-row py-2 justify-content-between py-4 mt-4 border-top">
+                    <p class="pry-font acc-col">&copy; 2023 Plant Palace, All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="images/twitter.png"
+                                    class="icon" alt="twitter"></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="images/fb.png" class="icon"
+                                    alt="facebook"></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="images/ig.png" class="icon"
+                                    alt="instagram"></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div><!--Container Fluid-->
+
+
+    <script>
+        document.getElementById("toastbtn").onclick = function () {
+            var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+            var toastList = toastElList.map(function (toastEl) {
+                return new bootstrap.Toast(toastEl)
+            })
+            toastList.forEach(toast => toast.show())
+        }
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
